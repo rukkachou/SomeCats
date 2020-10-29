@@ -7,12 +7,12 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.rukka.somecats.databinding.ProfileFragmentBinding
-import com.rukka.somecats.ui.home.ProfileViewModel
+import com.rukka.somecats.ui.home.HomeViewModel
 
 class ProfileFragment : Fragment() {
 
-    private val viewModel: ProfileViewModel by lazy {
-        ViewModelProvider(this).get(ProfileViewModel::class.java)
+    private val viewModel: HomeViewModel by lazy {
+        ViewModelProvider(this).get(HomeViewModel::class.java)
     }
 
     override fun onCreateView(
